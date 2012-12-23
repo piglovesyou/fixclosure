@@ -1,4 +1,4 @@
-fixclosure
+fixclosure [![Build Status](https://secure.travis-ci.org/teppeis/fixclosure.png?branch=master)](https://travis-ci.org/teppeis/fixclosure)
 ====
 fixclosure is JavaScirpt linter/fixer based on Esprima for Google Closure Library.
 now alpha version...
@@ -31,6 +31,19 @@ $ fixclosure --replaceMap foo.foobar:foo.foo foo.js
 
 ## Changelog
 
+* 0.1.3 (2012/12/08)
+  * Append package methods of Closure Library.
+  * Change version option from -V to -v.
+  * Change exit code of invalid argument to 1.
+  * Fix for private properties.
+* 0.1.2 (2012/11/28)
+  * Supports const property correctly.
+  * Supports a method starting with "$".
+  * Ignore goog.global.
+  * Don't provide @typedef type resources.
+  * Fix #5 don't provide a private class.
+  * Fix #6 Don't require a private method defined in the same file.
+  * Add some package methods.
 * 0.1.1 (2012/11/25)
   * Scope check (by piglovesyou)
   * Root package filter works for toProvide list.
